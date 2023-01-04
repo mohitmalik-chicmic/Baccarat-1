@@ -1,0 +1,70 @@
+{
+  "ver": "1.0.25",
+  "importer": "image",
+  "imported": true,
+  "uuid": "9150e93f-bb8c-4ca3-9ec4-26e71569678b",
+  "files": [
+    ".json",
+    ".png"
+  ],
+  "subMetas": {
+    "chip_10_HighLighted": {
+      "ver": "1.0.4",
+      "uuid": "35ec3482-5baa-44ec-90fe-07e312436ce8",
+      "rawTextureUuid": "9150e93f-bb8c-4ca3-9ec4-26e71569678b",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": 0,
+      "offsetY": 1,
+      "trimX": 21,
+      "trimY": 20,
+      "width": 158,
+      "height": 158,
+      "rawWidth": 200,
+      "rawHeight": 200,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {},
+      "importer": "*",
+      "imported": false,
+      "files": [],
+      "userData": {},
+      "displayName": "",
+      "id": "",
+      "name": ""
+    },
+    "6c48a": {
+      "importer": "texture",
+      "uuid": "9150e93f-bb8c-4ca3-9ec4-26e71569678b@6c48a",
+      "displayName": "chip_10_HighLighted",
+      "id": "6c48a",
+      "name": "texture",
+      "userData": {
+        "wrapModeS": "repeat",
+        "wrapModeT": "repeat",
+        "minfilter": "linear",
+        "magfilter": "linear",
+        "mipfilter": "none",
+        "anisotropy": 0,
+        "isUuid": true,
+        "imageUuidOrDatabaseUri": "9150e93f-bb8c-4ca3-9ec4-26e71569678b",
+        "visible": true
+      },
+      "ver": "1.0.22",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    }
+  },
+  "userData": {
+    "type": "texture",
+    "fixAlphaTransparencyArtifacts": true,
+    "hasAlpha": true,
+    "redirect": "9150e93f-bb8c-4ca3-9ec4-26e71569678b@6c48a"
+  }
+}

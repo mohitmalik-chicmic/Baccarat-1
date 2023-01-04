@@ -1,0 +1,70 @@
+{
+  "ver": "1.0.25",
+  "importer": "image",
+  "imported": true,
+  "uuid": "bc0578a4-443e-4232-97e0-557f7e0615ed",
+  "files": [
+    ".json",
+    ".png"
+  ],
+  "subMetas": {
+    "BankerPairHightLight_CN": {
+      "ver": "1.0.4",
+      "uuid": "25d1ccd9-e177-49c6-aa4f-a81c06e490eb",
+      "rawTextureUuid": "bc0578a4-443e-4232-97e0-557f7e0615ed",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": 0,
+      "offsetY": 0,
+      "trimX": 0,
+      "trimY": 0,
+      "width": 300,
+      "height": 121,
+      "rawWidth": 300,
+      "rawHeight": 121,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {},
+      "importer": "*",
+      "imported": false,
+      "files": [],
+      "userData": {},
+      "displayName": "",
+      "id": "",
+      "name": ""
+    },
+    "6c48a": {
+      "importer": "texture",
+      "uuid": "bc0578a4-443e-4232-97e0-557f7e0615ed@6c48a",
+      "displayName": "BankerPairHightLight_CN",
+      "id": "6c48a",
+      "name": "texture",
+      "userData": {
+        "wrapModeS": "repeat",
+        "wrapModeT": "repeat",
+        "minfilter": "linear",
+        "magfilter": "linear",
+        "mipfilter": "none",
+        "anisotropy": 0,
+        "isUuid": true,
+        "imageUuidOrDatabaseUri": "bc0578a4-443e-4232-97e0-557f7e0615ed",
+        "visible": true
+      },
+      "ver": "1.0.22",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    }
+  },
+  "userData": {
+    "type": "texture",
+    "fixAlphaTransparencyArtifacts": true,
+    "hasAlpha": true,
+    "redirect": "bc0578a4-443e-4232-97e0-557f7e0615ed@6c48a"
+  }
+}

@@ -1,0 +1,70 @@
+{
+  "ver": "1.0.25",
+  "importer": "image",
+  "imported": true,
+  "uuid": "946c8e31-294a-4b84-a575-2f2b4c0905ef",
+  "files": [
+    ".json",
+    ".png"
+  ],
+  "subMetas": {
+    "PlayerPairHighLight_EN": {
+      "ver": "1.0.4",
+      "uuid": "9202e782-972e-41b2-943f-e0f55a2abae2",
+      "rawTextureUuid": "946c8e31-294a-4b84-a575-2f2b4c0905ef",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": 0,
+      "offsetY": 0,
+      "trimX": 0,
+      "trimY": 0,
+      "width": 300,
+      "height": 121,
+      "rawWidth": 300,
+      "rawHeight": 121,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {},
+      "importer": "*",
+      "imported": false,
+      "files": [],
+      "userData": {},
+      "displayName": "",
+      "id": "",
+      "name": ""
+    },
+    "6c48a": {
+      "importer": "texture",
+      "uuid": "946c8e31-294a-4b84-a575-2f2b4c0905ef@6c48a",
+      "displayName": "PlayerPairHighLight_EN",
+      "id": "6c48a",
+      "name": "texture",
+      "userData": {
+        "wrapModeS": "repeat",
+        "wrapModeT": "repeat",
+        "minfilter": "linear",
+        "magfilter": "linear",
+        "mipfilter": "none",
+        "anisotropy": 0,
+        "isUuid": true,
+        "imageUuidOrDatabaseUri": "946c8e31-294a-4b84-a575-2f2b4c0905ef",
+        "visible": true
+      },
+      "ver": "1.0.22",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    }
+  },
+  "userData": {
+    "type": "texture",
+    "fixAlphaTransparencyArtifacts": true,
+    "hasAlpha": true,
+    "redirect": "946c8e31-294a-4b84-a575-2f2b4c0905ef@6c48a"
+  }
+}

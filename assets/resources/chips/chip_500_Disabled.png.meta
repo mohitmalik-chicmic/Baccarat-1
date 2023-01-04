@@ -1,0 +1,70 @@
+{
+  "ver": "1.0.25",
+  "importer": "image",
+  "imported": true,
+  "uuid": "dde848a8-0bbf-49c1-983f-40cf3e040c92",
+  "files": [
+    ".json",
+    ".png"
+  ],
+  "subMetas": {
+    "chip_500_Disabled": {
+      "ver": "1.0.4",
+      "uuid": "c611975f-a5f0-4917-ab35-7792ce631e95",
+      "rawTextureUuid": "dde848a8-0bbf-49c1-983f-40cf3e040c92",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": 0,
+      "offsetY": 1,
+      "trimX": 21,
+      "trimY": 20,
+      "width": 158,
+      "height": 158,
+      "rawWidth": 200,
+      "rawHeight": 200,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {},
+      "importer": "*",
+      "imported": false,
+      "files": [],
+      "userData": {},
+      "displayName": "",
+      "id": "",
+      "name": ""
+    },
+    "6c48a": {
+      "importer": "texture",
+      "uuid": "dde848a8-0bbf-49c1-983f-40cf3e040c92@6c48a",
+      "displayName": "chip_500_Disabled",
+      "id": "6c48a",
+      "name": "texture",
+      "userData": {
+        "wrapModeS": "repeat",
+        "wrapModeT": "repeat",
+        "minfilter": "linear",
+        "magfilter": "linear",
+        "mipfilter": "none",
+        "anisotropy": 0,
+        "isUuid": true,
+        "imageUuidOrDatabaseUri": "dde848a8-0bbf-49c1-983f-40cf3e040c92",
+        "visible": true
+      },
+      "ver": "1.0.22",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    }
+  },
+  "userData": {
+    "type": "texture",
+    "fixAlphaTransparencyArtifacts": true,
+    "hasAlpha": true,
+    "redirect": "dde848a8-0bbf-49c1-983f-40cf3e040c92@6c48a"
+  }
+}

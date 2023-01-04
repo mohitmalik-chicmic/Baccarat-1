@@ -1,0 +1,70 @@
+{
+  "ver": "1.0.25",
+  "importer": "image",
+  "imported": true,
+  "uuid": "2d1093dc-21c8-499b-8a04-41478c8d9dd3",
+  "files": [
+    ".json",
+    ".png"
+  ],
+  "subMetas": {
+    "BankerSelected": {
+      "ver": "1.0.4",
+      "uuid": "61c0d662-7346-4a60-ad31-958c19a4811b",
+      "rawTextureUuid": "2d1093dc-21c8-499b-8a04-41478c8d9dd3",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": 0,
+      "offsetY": 0,
+      "trimX": 0,
+      "trimY": 0,
+      "width": 799,
+      "height": 699,
+      "rawWidth": 799,
+      "rawHeight": 699,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {},
+      "importer": "*",
+      "imported": false,
+      "files": [],
+      "userData": {},
+      "displayName": "",
+      "id": "",
+      "name": ""
+    },
+    "6c48a": {
+      "importer": "texture",
+      "uuid": "2d1093dc-21c8-499b-8a04-41478c8d9dd3@6c48a",
+      "displayName": "BankerSelected",
+      "id": "6c48a",
+      "name": "texture",
+      "userData": {
+        "wrapModeS": "repeat",
+        "wrapModeT": "repeat",
+        "minfilter": "linear",
+        "magfilter": "linear",
+        "mipfilter": "none",
+        "anisotropy": 0,
+        "isUuid": true,
+        "imageUuidOrDatabaseUri": "2d1093dc-21c8-499b-8a04-41478c8d9dd3",
+        "visible": true
+      },
+      "ver": "1.0.22",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    }
+  },
+  "userData": {
+    "type": "texture",
+    "fixAlphaTransparencyArtifacts": true,
+    "hasAlpha": true,
+    "redirect": "2d1093dc-21c8-499b-8a04-41478c8d9dd3@6c48a"
+  }
+}

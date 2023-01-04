@@ -1,0 +1,70 @@
+{
+  "ver": "1.0.25",
+  "importer": "image",
+  "imported": true,
+  "uuid": "9d8dac81-3496-467f-ac64-a7f5d67a2c4e",
+  "files": [
+    ".json",
+    ".png"
+  ],
+  "subMetas": {
+    "PlayerHightLight": {
+      "ver": "1.0.4",
+      "uuid": "264f4cab-16a4-4e18-ac0b-cf1c51ecc8a7",
+      "rawTextureUuid": "9d8dac81-3496-467f-ac64-a7f5d67a2c4e",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": 0,
+      "offsetY": 0,
+      "trimX": 0,
+      "trimY": 0,
+      "width": 799,
+      "height": 704,
+      "rawWidth": 799,
+      "rawHeight": 704,
+      "borderTop": 0,
+      "borderBottom": 9,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {},
+      "importer": "*",
+      "imported": false,
+      "files": [],
+      "userData": {},
+      "displayName": "",
+      "id": "",
+      "name": ""
+    },
+    "6c48a": {
+      "importer": "texture",
+      "uuid": "9d8dac81-3496-467f-ac64-a7f5d67a2c4e@6c48a",
+      "displayName": "PlayerHightLight",
+      "id": "6c48a",
+      "name": "texture",
+      "userData": {
+        "wrapModeS": "repeat",
+        "wrapModeT": "repeat",
+        "minfilter": "linear",
+        "magfilter": "linear",
+        "mipfilter": "none",
+        "anisotropy": 0,
+        "isUuid": true,
+        "imageUuidOrDatabaseUri": "9d8dac81-3496-467f-ac64-a7f5d67a2c4e",
+        "visible": true
+      },
+      "ver": "1.0.22",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    }
+  },
+  "userData": {
+    "type": "texture",
+    "fixAlphaTransparencyArtifacts": true,
+    "hasAlpha": true,
+    "redirect": "9d8dac81-3496-467f-ac64-a7f5d67a2c4e@6c48a"
+  }
+}

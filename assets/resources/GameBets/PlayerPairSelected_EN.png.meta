@@ -1,0 +1,70 @@
+{
+  "ver": "1.0.25",
+  "importer": "image",
+  "imported": true,
+  "uuid": "4319a51f-e577-4ccf-af3a-26d4b13e76d1",
+  "files": [
+    ".json",
+    ".png"
+  ],
+  "subMetas": {
+    "PlayerPairSelected_EN": {
+      "ver": "1.0.4",
+      "uuid": "b57fabbe-e4d7-4e73-94a7-713a027ed795",
+      "rawTextureUuid": "4319a51f-e577-4ccf-af3a-26d4b13e76d1",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": 0,
+      "offsetY": 0,
+      "trimX": 0,
+      "trimY": 0,
+      "width": 300,
+      "height": 120,
+      "rawWidth": 300,
+      "rawHeight": 120,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {},
+      "importer": "*",
+      "imported": false,
+      "files": [],
+      "userData": {},
+      "displayName": "",
+      "id": "",
+      "name": ""
+    },
+    "6c48a": {
+      "importer": "texture",
+      "uuid": "4319a51f-e577-4ccf-af3a-26d4b13e76d1@6c48a",
+      "displayName": "PlayerPairSelected_EN",
+      "id": "6c48a",
+      "name": "texture",
+      "userData": {
+        "wrapModeS": "repeat",
+        "wrapModeT": "repeat",
+        "minfilter": "linear",
+        "magfilter": "linear",
+        "mipfilter": "none",
+        "anisotropy": 0,
+        "isUuid": true,
+        "imageUuidOrDatabaseUri": "4319a51f-e577-4ccf-af3a-26d4b13e76d1",
+        "visible": true
+      },
+      "ver": "1.0.22",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    }
+  },
+  "userData": {
+    "type": "texture",
+    "fixAlphaTransparencyArtifacts": true,
+    "hasAlpha": true,
+    "redirect": "4319a51f-e577-4ccf-af3a-26d4b13e76d1@6c48a"
+  }
+}

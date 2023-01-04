@@ -1,0 +1,70 @@
+{
+  "ver": "1.0.25",
+  "importer": "image",
+  "imported": true,
+  "uuid": "c144f4d8-00f3-425f-93ca-df265081b3b5",
+  "files": [
+    ".json",
+    ".png"
+  ],
+  "subMetas": {
+    "BankerHighLight": {
+      "ver": "1.0.4",
+      "uuid": "363be459-63d9-4b78-985f-d8bbb87da28a",
+      "rawTextureUuid": "c144f4d8-00f3-425f-93ca-df265081b3b5",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": 0,
+      "offsetY": 0,
+      "trimX": 0,
+      "trimY": 0,
+      "width": 799,
+      "height": 704,
+      "rawWidth": 799,
+      "rawHeight": 704,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {},
+      "importer": "*",
+      "imported": false,
+      "files": [],
+      "userData": {},
+      "displayName": "",
+      "id": "",
+      "name": ""
+    },
+    "6c48a": {
+      "importer": "texture",
+      "uuid": "c144f4d8-00f3-425f-93ca-df265081b3b5@6c48a",
+      "displayName": "BankerHighLight",
+      "id": "6c48a",
+      "name": "texture",
+      "userData": {
+        "wrapModeS": "repeat",
+        "wrapModeT": "repeat",
+        "minfilter": "linear",
+        "magfilter": "linear",
+        "mipfilter": "none",
+        "anisotropy": 0,
+        "isUuid": true,
+        "imageUuidOrDatabaseUri": "c144f4d8-00f3-425f-93ca-df265081b3b5",
+        "visible": true
+      },
+      "ver": "1.0.22",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    }
+  },
+  "userData": {
+    "type": "texture",
+    "fixAlphaTransparencyArtifacts": true,
+    "hasAlpha": true,
+    "redirect": "c144f4d8-00f3-425f-93ca-df265081b3b5@6c48a"
+  }
+}

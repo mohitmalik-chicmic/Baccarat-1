@@ -1,0 +1,70 @@
+{
+  "ver": "1.0.25",
+  "importer": "image",
+  "imported": true,
+  "uuid": "9e9c8b0c-dfb6-4c1a-b045-d5c575ece67a",
+  "files": [
+    ".json",
+    ".png"
+  ],
+  "subMetas": {
+    "BankerPairSelected_CN": {
+      "ver": "1.0.4",
+      "uuid": "3f2203fe-1076-4e57-b0da-d7bd4c0f858c",
+      "rawTextureUuid": "9e9c8b0c-dfb6-4c1a-b045-d5c575ece67a",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": 0,
+      "offsetY": 0,
+      "trimX": 0,
+      "trimY": 0,
+      "width": 300,
+      "height": 120,
+      "rawWidth": 300,
+      "rawHeight": 120,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {},
+      "importer": "*",
+      "imported": false,
+      "files": [],
+      "userData": {},
+      "displayName": "",
+      "id": "",
+      "name": ""
+    },
+    "6c48a": {
+      "importer": "texture",
+      "uuid": "9e9c8b0c-dfb6-4c1a-b045-d5c575ece67a@6c48a",
+      "displayName": "BankerPairSelected_CN",
+      "id": "6c48a",
+      "name": "texture",
+      "userData": {
+        "wrapModeS": "repeat",
+        "wrapModeT": "repeat",
+        "minfilter": "linear",
+        "magfilter": "linear",
+        "mipfilter": "none",
+        "anisotropy": 0,
+        "isUuid": true,
+        "imageUuidOrDatabaseUri": "9e9c8b0c-dfb6-4c1a-b045-d5c575ece67a",
+        "visible": true
+      },
+      "ver": "1.0.22",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    }
+  },
+  "userData": {
+    "type": "texture",
+    "fixAlphaTransparencyArtifacts": true,
+    "hasAlpha": true,
+    "redirect": "9e9c8b0c-dfb6-4c1a-b045-d5c575ece67a@6c48a"
+  }
+}
