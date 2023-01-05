@@ -1,0 +1,7 @@
+{
+    "bets" : [
+        {"playerBet": "0"},
+        {"bankerBet" : "0"},
+        {"tieBet" : "0"}
+    ]
+}
