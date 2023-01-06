@@ -1,11 +1,12 @@
 import { _decorator, Component, Node } from 'cc';
+import { cardDistribution } from '../cardDistribution/cardDistribution';
 const { ccclass, property } = _decorator;
 
 @ccclass('loading')
 export class loading extends Component {
     parentFunctionCallback : Function = null;
     start() {
-
+     
     }
     startGame(btncallback: Function){
         //call received from gameplay.start()
