@@ -16,7 +16,7 @@ export class buttonCallbacks extends Component {
         //console.log(buttonNode);
         //console.log(buttonClicked);
         
-        this.node.getComponent(playerScreen).selectedChip(buttonClicked, customCallback)
+       // this.node.getComponent(playerScreen).selectedChip(buttonClicked, customCallback)
         // switch(buttonNode.buttonType){
         //     case BUTTON_TYPE.CHIP_1:{
         //         //call chip1 component

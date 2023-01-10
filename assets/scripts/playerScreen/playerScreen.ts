@@ -1,28 +1,42 @@
-import { _decorator, Component, Node, Sprite, SpriteFrame, ToggleContainer, instantiate, Prefab, JsonAsset, Vec3, UITransform, Label, Button, resources, ImageAsset } from 'cc';
+import { _decorator, Component, Node, Sprite, SpriteFrame, ToggleContainer, instantiate, Prefab, JsonAsset, Vec3, UITransform, Label, Button, resources, ImageAsset, EventTouch } from 'cc';
 import { bigChipPrefab } from '../bigChipPrefab/bigChipPrefab';
 import { cardDistribution } from '../cardDistribution/cardDistribution';
+import { chipClickMouse } from '../chipClickMouse';
 const { ccclass, property } = _decorator;
 
 @ccclass('playerScreen')
 export class playerScreen extends Component {
-    @property({type: Node}) playerBet : Node = null;
-    @property({type : Node}) bankerBet : Node = null;
+  //  @property({type: Node}) playerBet : Node = null;
+ //   @property({type : Node}) bankerBet : Node = null;
     @property({type: Node }) playerCardSpace : Node = null;
     @property({type: Node }) bankerCardSpace : Node = null;
     @property({type: Label}) betAmt : Label = null;
     @property({type: Node }) tableNode : Node = null;
     @property({type : Label }) bankerScoreCard : Label = null;
     @property({type : Label}) playerScoreCard : Label = null;
-    bigChip : Node = null;
+  //  @property({type: Node}) chipsNode : Node = null;
+    @property({type : Node}) cardSpace : Node = null;
+    playerScore : number =0;
+    bankerScore : number =0;
+    space : number = 0;
+    thirdCard : boolean = false;
+  //  bigChip : Node = null;
     selectedBetAmt : Node = null;
-    selectedSpace : Node = null;
+  //  selectedSpace : Node = null;
     betAmount : number = 0
-    playerBetAmt : number =0
-    bankerBetAmt : number = 0;
-    tieBetAmt : number = 0;
-    // playerScore : number =0;
-    // bankerScore : number =0;
+ //   playerBetAmt : number =0
+ //   bankerBetAmt : number = 0;
+  //  tieBetAmt : number = 0;
+    bankerWin : boolean = false;
+    playerWin : boolean = false;
+    gameEnd : boolean = false;
+    tie : boolean = false;
     cardsDeckArr : SpriteFrame[] = null;
+  //  mousePos: Vec3;
+  //  rect: Vec3;
+  //  pos: Vec3;
+ //   selectImgPos: Vec3;
+    static loadCards: any;
     start() {
         this.loadCards()
     }
@@ -35,123 +49,177 @@ export class playerScreen extends Component {
             this.cardsDeckArr = spriteFrame;
         })
     }
-    selectBetPlace(){
-        this.playerBet.on(Node.EventType.MOUSE_DOWN,this.selectedBetSpace, this)
-    }
-    selectedBetSpace(event){
-        //console.log("Player bet selected", event.currentTarget);
-       // //console.log(this.playerSelectedSprite);
-       // this.betAmount =0
-       this.tableNode.getComponent(ToggleContainer).allowSwitchOff = false
-       this.selectedSpace = event.currentTarget;
-        // switch(event.currentTarget.name){
-        //     case "playerBet":{
-        //         //console.log("Player space selected");
-        //         this.selectedSpace = event.currentTarget
-                
-        //     }break;
-        //     case "bankerBet":{
-        //         //console.log("Banker space seleted");
-        //         this.selectedSpace = event.currentTarget
-                
-        //     }break;
-        //     case "tieBet": {
-        //         //console.log("Tie space selected");
-        //         this.selectedSpace = event.currentTarget
-                
-        //     }
-
-        // }
-        
-       // event.currentTarget.getComponent(Sprite).spriteFrame = this.playerSelectedSprite
-    }
-    selectedChip(buttonNode: Node, customCallback){
-        this.selectedBetAmt = buttonNode;
-       // console.log(this.selectedBetAmt);
-        if(this.selectedSpace){
-            this.betAmount = this.betAmount+parseInt(customCallback)
-            this.setBet()
-        }
+    selectedChip(chipSelected : Node){
+        this.selectedBetAmt = chipSelected
+        console.log(this.selectedBetAmt.name);
+        this.betAmount = this.betAmount+parseInt(this.selectedBetAmt.name)
+        this.setBet()
     }
     setBet(){
-        this.selectedBetAmt.name = 'bigChip';
-            let bigChip = instantiate(this.selectedBetAmt)
-           // this.bigChip = instantiate(this.bigChipPrefab);
-           bigChip.getComponent(Button).enabled = false
-            //console.log((bigChip));
-            let spaceName = this.selectedSpace.name
-            if(this.selectedSpace.getChildByName('bigChip')!=null)
-                this.selectedSpace.getChildByName('bigChip').destroy();
-            this.selectedSpace.insertChild(bigChip, this.selectedSpace.children.length)
-          //  let pos = this.selectedSpace.getPosition();
-            bigChip.setPosition(new Vec3(0,0,0))
             this.betAmt.string = `${this.betAmount}`
-            
-           switch(spaceName){
-            case "playerBet":{
-                this.playerBetAmt = this.betAmount;
-            }break;
-            case "bankerBet":{
-                this.bankerBetAmt = this.betAmount;
-            }
-            case "tieBet":{
-                this.bankerBetAmt = this.betAmount
-            }
            }
-        
-    }
     cardDistribution(){
-        let playerScore : number =0;
-        let bankerScore : number =0;
-        //console.log(this.cardsDeckArr);
-        let arraySize = this.cardsDeckArr.length
-        let space = 0;
+        this.playerScore = 0;
+        this.bankerScore = 0;
+        this.space = 0;
         for(let i =1;i<=4;i++){
-            let cardIndex = Math.floor(Math.random()*(arraySize-0)+0);
-         //   console.log("cardIndex", cardIndex);
-          //  console.log(this.cardsDeckArr[cardIndex]);
-         //   console.log("Printing selected card",this.cardsDeckArr[cardIndex].name);
-            let cardNode = instantiate(this.selectedBetAmt)
-            cardNode.getComponent(Sprite).spriteFrame = this.cardsDeckArr[cardIndex]
+            let {cardNode,cardIndex} = this.drawCard();
             if(i%2!= 0){
-                this.playerCardSpace.addChild(cardNode)
-               playerScore = playerScore+(parseInt(this.cardsDeckArr[cardIndex].name)%10);
-               if(playerScore>9){
-                    playerScore = playerScore%10;
-               }
-                this.playerScoreCard.string = playerScore.toString();
-               // let pos = this.playerBet.getPosition();
-                cardNode.setPosition(new Vec3(0+space,0,0))
+                this.addCardToPlayer(cardNode , cardIndex)
             }
             else{
-                this.bankerCardSpace.addChild(cardNode)
-               // let pos = this.bankerBet.getPosition();
-               bankerScore = bankerScore+(parseInt(this.cardsDeckArr[cardIndex].name)%10);
-               if(bankerScore>9){
-                    bankerScore = bankerScore%10;
-               }
-                this.bankerScoreCard.string = bankerScore.toString();
-                cardNode.setPosition(new Vec3(0+space,0,0))
+                this.addCardToBanker(cardNode, cardIndex)
             }
-            space = i*40;    
+            this.space = i*40;    
         }
-        let bankerWin : boolean = false;
-        let playerWin : boolean = false
-        if(playerScore==8 || playerScore==9){
-            playerWin = true;
-            console.log("player wins NATURAL");
+        let win = this.checkWin()
+         console.log("Printing winning", win, this.playerWin, this.bankerWin, this.tie);
+        if(!this.playerWin && !this.bankerWin && !this.tie){
+            this.drawThirdCard()
         }
-        if(bankerScore ==8 || bankerScore ==9){
-            bankerWin = true
-            console.log("banker wins NATURAL");  
+
+            
+        
+    }
+    addCardToPlayer(cardNode, cardIndex){
+        this.playerCardSpace.addChild(cardNode)
+        this.playerScore = this.playerScore+(parseInt(this.cardsDeckArr[cardIndex].name)%10);
+        if(this.playerScore>9){
+             this.playerScore = this.playerScore%10;
         }
-        if(playerWin && bankerWin){
-            console.log("TIE between Banker and Player");
+         this.playerScoreCard.string = this.playerScore.toString();
+         cardNode.setPosition(new Vec3(0+this.space,0,0))
+    }
+    addCardToBanker(cardNode , cardIndex){
+        this.bankerCardSpace.addChild(cardNode)
+               this.bankerScore = this.bankerScore+(parseInt(this.cardsDeckArr[cardIndex].name)%10);
+               if(this.bankerScore>9){
+                    this.bankerScore = this.bankerScore%10;
+               }
+                this.bankerScoreCard.string = this.bankerScore.toString();
+                cardNode.setPosition(new Vec3(0+this.space,0,0))
+    }
+    drawCard(){
+        let arraySize = this.cardsDeckArr.length
+        let cardIndex = Math.floor(Math.random()*(arraySize-0)+0);
+        let cardNode = instantiate(this.cardSpace)
+        cardNode.getComponent(Sprite).spriteFrame = this.cardsDeckArr[cardIndex]
+        return {cardNode,cardIndex};
+    }
+    checkWin(){
+        console.log("CHECK WIN CALLED");
+        // conditions after 2nd card
+        if(this.playerScore ==8 || this.playerScore ==9 && this.bankerScore ==8 || this.bankerScore ==9){
+            if(this.playerScore>this.bankerScore){
+                this.playerWin = true
+                console.log("PLAYER WIN");
+                this.tie = false;
+                this.bankerWin = false
+                return "playerWin"
+            }
+            else if(this.playerScore<this.bankerScore){
+                this.bankerWin= true;
+                this.tie = false
+                this.playerWin = false
+                console.log('BANKER WIN');
+                return "bankerWin"
+            }
+            else{
+                this.tie = true
+                console.log("TIE");
+                this.playerWin = false;
+                this.bankerWin = false
+                return  "tie"
+            }
+
+        }
+        //third card drawn
+        if(this.thirdCard){
+            if(this.playerScore>this.bankerScore){
+                this.playerWin = true
+                console.log("PLAYER WIN");
+                this.tie = false;
+                this.bankerWin = false
+                return "playerWin"
+            }
+        else{
+            this.bankerWin= true;
+                this.tie = false
+                this.playerWin = false
+                console.log('BANKER WIN');
+                return "bankerWin"
+            }
+        }
+    }
+    
+    drawThirdCard(){
+        //if this.playerScore 6 or 7 player stand
+        let playerThirdCard : number = 0;
+        this.thirdCard = true;
+        if(this.playerScore<=5){
+            console.log("Draw third card");
+            let{cardNode , cardIndex} = this.drawCard();
+            playerThirdCard = parseInt(this.cardsDeckArr[cardIndex].name);
+            this.playerCardSpace.addChild(cardNode)
+            cardNode.setPosition(new Vec3(0+this.space,0,0))
+            this.playerScore = this.playerScore+(parseInt(this.cardsDeckArr[cardIndex].name)%10);
+            if(this.playerScore>9){
+                 this.playerScore = this.playerScore%10;
+            }
+             this.playerScoreCard.string = this.playerScore.toString();
+
+        }
+        else{
+            console.log("STAND Score is 6 or 7");
             
         }
+        switch(this.bankerScore){
+                case 0:
+                case 1:
+                case 2:{
+                    if(playerThirdCard == 8 || playerThirdCard ==9){
+                        return
+                    }else{  
+                        let {cardNode, cardIndex} = this.drawCard()
+                        this.addCardToBanker(cardNode, cardIndex);
+                    }
+                }break;
+                case 3:{
+                    if(playerThirdCard == 8)
+                        return;
+                    if(this.playerScore!=8){
+                        let {cardNode, cardIndex} = this.drawCard()
+                        this.addCardToBanker(cardNode, cardIndex);
+                    }
+                }break;
+                case 4:{
+                    if(playerThirdCard>=2 && playerThirdCard<=7){
+                        let {cardNode, cardIndex} = this.drawCard()
+                        this.addCardToBanker(cardNode, cardIndex);
+                    }
+                }break;
+                case 5:{
+                    if(playerThirdCard>=4 && playerThirdCard<=7){
+                        let {cardNode, cardIndex} = this.drawCard()
+                        this.addCardToBanker(cardNode, cardIndex);
+                    }
+                }break;
+                case 6:{
+                    if(playerThirdCard == 6 || playerThirdCard ==7){
+                        let {cardNode, cardIndex} = this.drawCard()
+                        this.addCardToBanker(cardNode, cardIndex);
+                    }
+                }break;
+                case 7:{
+                    console.log("STAY banker Score = 7");
+                    
+                }break;
+            }
+        let win = this.checkWin()
+        console.log("Printing winning", win, this.playerWin, this.bankerWin, this.tie);
     }
     update(deltaTime: number) {
         
     }
 }
-
+  
