@@ -21,11 +21,11 @@
     "_active": true,
     "_components": [],
     "_prefab": {
-      "__id__": 112
+      "__id__": 111
     },
     "autoReleaseAssets": false,
     "_globals": {
-      "__id__": 113
+      "__id__": 112
     },
     "_id": "cde17127-b97c-430d-a286-0b226064e3a9"
   },
@@ -47,6 +47,9 @@
     "_active": true,
     "_components": [
       {
+        "__id__": 107
+      },
+      {
         "__id__": 108
       },
       {
@@ -54,9 +57,6 @@
       },
       {
         "__id__": 110
-      },
-      {
-        "__id__": 111
       }
     ],
     "_prefab": null,
@@ -189,10 +189,10 @@
     "_active": true,
     "_components": [
       {
-        "__id__": 106
+        "__id__": 105
       },
       {
-        "__id__": 107
+        "__id__": 106
       }
     ],
     "_prefab": null,
@@ -265,9 +265,6 @@
       },
       {
         "__id__": 70
-      },
-      {
-        "__id__": 105
       }
     ],
     "_prefab": null,
@@ -2543,8 +2540,8 @@
     "bankerCardSpace": {
       "__id__": 26
     },
-    "betAmt": {
-      "__id__": 71
+    "cardSpace": {
+      "__id__": 21
     },
     "tableNode": {
       "__id__": 38
@@ -2552,11 +2549,11 @@
     "bankerScoreCard": {
       "__id__": 33
     },
+    "betAmt": {
+      "__id__": 71
+    },
     "playerScoreCard": {
       "__id__": 18
-    },
-    "cardSpace": {
-      "__id__": 21
     },
     "_id": "44WRiwLOxFeKaf0n8RCC6R"
   },
@@ -3677,17 +3674,6 @@
     "_id": "50C7MnbtFA1roecI9JLRQU"
   },
   {
-    "__type__": "7407eXpjAJN+K8nEp7nSwIm",
-    "_name": "",
-    "_objFlags": 0,
-    "node": {
-      "__id__": 6
-    },
-    "_enabled": false,
-    "__prefab": null,
-    "_id": "682bhnfMNHOL30AGMSJVPw"
-  },
-  {
     "__type__": "cc.UITransform",
     "_name": "",
     "_objFlags": 0,
@@ -3833,19 +3819,19 @@
   {
     "__type__": "cc.SceneGlobals",
     "ambient": {
-      "__id__": 114
+      "__id__": 113
     },
     "shadows": {
-      "__id__": 115
+      "__id__": 114
     },
     "_skybox": {
-      "__id__": 116
+      "__id__": 115
     },
     "fog": {
-      "__id__": 117
+      "__id__": 116
     },
     "octree": {
-      "__id__": 118
+      "__id__": 117
     }
   },
   {

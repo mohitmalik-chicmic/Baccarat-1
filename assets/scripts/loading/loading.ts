@@ -1,5 +1,4 @@
 import { _decorator, Component, Node } from 'cc';
-import { cardDistribution } from '../cardDistribution/cardDistribution';
 const { ccclass, property } = _decorator;
 
 @ccclass('loading')
