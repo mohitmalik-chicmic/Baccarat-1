@@ -38,7 +38,7 @@
   "camera-infos": {
     "c77ecaa8-c936-46c4-a5b0-98692673ed87": {
       "position": {
-        "x": 959.9999999999998,
+        "x": 960,
         "y": 540,
         "z": 5000
       },
@@ -56,8 +56,44 @@
     },
     "cde17127-b97c-430d-a286-0b226064e3a9": {
       "position": {
-        "x": 1177.0390742497102,
-        "y": 763.4802822224001,
+        "x": 960,
+        "y": 540,
+        "z": 5000
+      },
+      "rotation": {
+        "x": 0,
+        "y": 0,
+        "z": 0,
+        "w": 1
+      },
+      "viewCenter": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      }
+    },
+    "641GS86khCSp25fKifNqVu": {
+      "position": {
+        "x": 960,
+        "y": 540,
+        "z": 5000
+      },
+      "rotation": {
+        "x": 0,
+        "y": 0,
+        "z": 0,
+        "w": 1
+      },
+      "viewCenter": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      }
+    },
+    "1518LlW/9M9bjSfZcmSX8g": {
+      "position": {
+        "x": 300,
+        "y": 740.774,
         "z": 5000
       },
       "rotation": {
@@ -74,7 +110,7 @@
     }
   },
   "camera-uuids": [
-    "cde17127-b97c-430d-a286-0b226064e3a9"
+    "1518LlW/9M9bjSfZcmSX8g"
   ],
   "float-window": {
     "position": {

@@ -2,12 +2,12 @@
   "ver": "1.1.40",
   "importer": "prefab",
   "imported": true,
-  "uuid": "9a3cd404-0c84-4eca-b6c3-ad53e183c7e4",
+  "uuid": "40523ac8-b814-4b60-b471-2c4da10df686",
   "files": [
     ".json"
   ],
   "subMetas": {},
   "userData": {
-    "syncNodeName": "mainGamePlay"
+    "syncNodeName": "popUp"
   }
 }
