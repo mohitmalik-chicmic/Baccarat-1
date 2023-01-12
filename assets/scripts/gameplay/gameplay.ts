@@ -1,6 +1,7 @@
 import { _decorator, Component, Node, Prefab, instantiate } from 'cc';
 import { loading } from '../loading/loading';
-import { popUpPrefab } from '../popUp/popUp';
+import { popUpPrefab } from '../popUp/popUpPrefab';
+
 const { ccclass, property } = _decorator;
 
 @ccclass('gameplay')
