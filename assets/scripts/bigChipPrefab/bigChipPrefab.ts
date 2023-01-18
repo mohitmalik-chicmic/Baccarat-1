@@ -9,7 +9,7 @@ export class bigChipPrefab extends Component {
     }
     setLabelValue(value){
         this.betAmt.getComponent(Label).string = value.toString();
-        //console.log("Inside bigChipPrefab", this.betAmt.getComponent(Label).string);
+        ////console.log("Inside bigChipPrefab", this.betAmt.getComponent(Label).string);
         
     }
     update(deltaTime: number) {

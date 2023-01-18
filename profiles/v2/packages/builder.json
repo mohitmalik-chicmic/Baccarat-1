@@ -1,5 +1,69 @@
 {
   "log": {
     "level": 4
+  },
+  "common": {
+    "polyfills": {
+      "asyncFunctions": true
+    },
+    "buildPath": "project://build",
+    "outputName": "web-mobile",
+    "mainBundleCompressionType": "merge_dep",
+    "platform": "web-mobile"
+  },
+  "BuildTaskManager": {
+    "taskMap": {
+      "1673530878167": {
+        "type": "build",
+        "id": "1673530878167",
+        "progress": 1,
+        "state": "success",
+        "stage": "build",
+        "message": "18-01-2023 14:19:42 Build success in 49109 ms!",
+        "options": {
+          "name": "baccarat",
+          "platform": "web-mobile",
+          "buildPath": "project://build",
+          "debug": false,
+          "md5Cache": false,
+          "skipCompressTexture": false,
+          "sourceMaps": false,
+          "polyfills": {
+            "asyncFunctions": true
+          },
+          "experimentalEraseModules": false,
+          "useBuiltinServer": false,
+          "mainBundleIsRemote": false,
+          "mainBundleCompressionType": "merge_dep",
+          "replaceSplashScreen": false,
+          "startScene": "cde17127-b97c-430d-a286-0b226064e3a9",
+          "outputName": "web-mobile",
+          "scenes": [
+            {
+              "url": "db://assets/scene/gameplay.scene",
+              "uuid": "cde17127-b97c-430d-a286-0b226064e3a9",
+              "inBundle": false
+            }
+          ],
+          "web-desktop": [],
+          "packages": {
+            "web-mobile": {
+              "orientation": "auto",
+              "embedWebDebugger": false,
+              "__version__": "1.0.1"
+            },
+            "cocos-service": {
+              "configID": "93b0f7",
+              "services": [],
+              "__version__": "3.0.4"
+            }
+          },
+          "__version__": "1.3.3",
+          "web-mobile": []
+        },
+        "time": "18-01-2023 14:18",
+        "dirty": false
+      }
+    }
   }
 }

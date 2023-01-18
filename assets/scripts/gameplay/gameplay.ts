@@ -16,9 +16,9 @@ export class gameplay extends Component {
         loadingScreen.getComponent(loading).startGame(this.mainScreen);
     }
     mainScreen = (node : Node) =>{
-        //console.log(node);
+        ////console.log(node);
         if(node.active == false){
-            //console.log("Button Pressed");
+            ////console.log("Button Pressed");
             let mainGamePlay = instantiate(this.mainGamePlay);
             this.node.addChild(mainGamePlay);
             let popUp = instantiate(this.placeBetPopUp);

@@ -15,8 +15,8 @@ export class popUpPrefab extends Component {
     closePopUp(){
         setTimeout(()=>{
             playPopUpCloseAnimation(this.node);
-        },3000)
-        console.log("Inside popUpPrefab");
+        },2000)
+        //console.log("Inside popUpPrefab");
         
     }
     update(deltaTime: number) {
